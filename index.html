@@ -1,0 +1,78 @@
+<html>
+    <head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Employees Data</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">   
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <style>
+         
+        </style>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+   
+    <body>
+      <div class="container">
+        <h1 class="text-center" >Emplyees Data</h1>
+        <input class="form-control" id="id" >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="form-control" id="name" >
+        </div>
+        <div id="alert-name"class="alert alert-danger">
+          Name invalid EX:amir mostafa ahmed
+        </div>
+
+        <div class="form-group">
+          <label for="age">age</label>
+          <input class="form-control" id="age">
+        </div>
+        <div id="alert-age"class="alert alert-danger">
+          age should 20-80 years
+        </div>
+
+        <div class="form-group">
+          <label for="phone">phone</label>
+          <input class="form-control" id="phone" >
+        </div>
+        <div id="alert-phone"class="alert alert-danger">
+          invalid egyption number must be 01222334456
+        </div>
+
+        <div class="form-group">
+          <label for="title">title</label>
+          <input class="form-control" id="title" >
+        </div>
+        <div id="alert-title"class="alert alert-danger">
+          invalid title 
+        </div>
+        <button id="add"class="btn btn-success">Add</button>
+
+        <div class="form-group">
+          
+          <input class="form-control  w-50 m-auto my-5 " placeholder="search"  id="search" >
+        </div>
+      <table class="table table-striped" >
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Title</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="content">
+
+        </tbody>
+      </table>
+    </div>
+    <script src="js/main.js"></script>
+    </body>
+</html>
